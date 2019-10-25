@@ -4,7 +4,7 @@
   </a>
 </p>
 
-This template its similar to create-react-app but is meant for 4Geeks Academy students.
+This template is similar to create-react-app but it's meant for 4Geeks Academy students.
 
 ##### Download the boilerplate using the BreatheCode CLI
 ```
@@ -42,7 +42,7 @@ $ npm run deploy
 
 ## Other features
 
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code identation and formating.
+- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
 - Error reporting: Use of [eslint](https://eslint.org/) for better error reporting.
 - Hot Deploy: Use of [Webpack Development Server](https://webpack.js.org/configuration/dev-server/) for hot deploy and live reload.
 - One-command publish of the code to github pages with `npm run deploy`.
