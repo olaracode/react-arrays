@@ -9,7 +9,7 @@ This template is similar to create-react-app but it's meant for 4Geeks Academy s
 ##### Download the boilerplate using the BreatheCode CLI
 ```
 $ npm i breathecode-cli -g
-$ bc start:react-project -r
+$ breathecode start:react-project -r
 ```
 
 #### Or Download the boilerplate using git
@@ -34,11 +34,9 @@ Add more files into your, `./src/js/components` or styles folder as you need the
 
 ## Publish your website!
 
-This boilerplate is 100% compatible with the free github pages hosting.
-To publish your website you need to `push your code to your github repository` and run the following command after:
-```sh
-$ npm run deploy
-```
+This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [now zeit](https://zeit.co/) hosting.
+
+It takes just 2 minutes to deploy, [click here to start the process](https://github.com/4GeeksAcademy/react-hello/blob/master/docs/DEPLOY.md).
 
 ## Other features
 
