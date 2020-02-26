@@ -5,11 +5,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"c9": "webpack-dev-server --mode development --open --host $IP --port $PORT",
 		"gitpod": "webpack-dev-server --mode development --open --port 3000",
 		"start": "webpack-dev-server --mode development --hot",
 		"build": "webpack --mode development",
-		"deploy": "node deploy-to-github.js"
+		"deploy:github": "node deploy-to-github.js"
 	},
 	"author": "Alejandro Sanchez",
 	"license": "ISC",
