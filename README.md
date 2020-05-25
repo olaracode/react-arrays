@@ -6,13 +6,7 @@
 
 This template is similar to create-react-app but it's meant for 4Geeks Academy students.
 
-##### Download the boilerplate using the BreatheCode CLI
-```
-$ npm i breathecode-cli -g
-$ breathecode start:react-project -r
-```
-
-#### Or Download the boilerplate using git
+##### Download the boilerplate using git
 
 ```
 $ git clone https://github.com/4GeeksAcademy/react-hello.git
