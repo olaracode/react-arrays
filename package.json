@@ -18,8 +18,10 @@
 		"@babel/cli": "^7.4.3",
 		"@babel/core": "^7.4.3",
 		"@babel/plugin-proposal-class-properties": "^7.4.0",
+		"@babel/plugin-transform-runtime": "^7.10.5",
 		"@babel/preset-env": "^7.4.3",
 		"@babel/preset-react": "^7.0.0",
+		"@babel/runtime": "^7.10.5",
 		"babel-eslint": "^10.0.1",
 		"babel-loader": "^8.0.5",
 		"babel-plugin-transform-class-properties": "^6.24.1",
@@ -49,7 +51,13 @@
 			"@babel/preset-react"
 		],
 		"plugins": [
-			"@babel/plugin-proposal-class-properties"
+			"@babel/plugin-proposal-class-properties",
+			[
+				"@babel/plugin-transform-runtime",
+				{
+					"regenerator": true
+				}
+			]
 		]
 	},
 	"dependencies": {
