@@ -28,7 +28,7 @@ Add more files into your, `./src/js/components` or styles folder as you need the
 
 ## Publish your website!
 
-This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [now zeit](https://zeit.co/) hosting.
+This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [vercel](https://vercel.com/) hosting.
 
 It takes just 2 minutes to deploy, [click here to start the process](https://github.com/4GeeksAcademy/react-hello/blob/master/docs/DEPLOY.md).
 
