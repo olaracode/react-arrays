@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var PrettierPlugin = require("prettier-webpack-plugin");
-
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 module.exports = {
   entry: [
     './src/js/index.js'
@@ -61,7 +61,7 @@ module.exports = {
         template: 'template.html'
     }),
     new PrettierPlugin({
-      parser: "babylon",
+      parser: "babel",
       printWidth: 80,             // Specify the length of line that the printer will wrap on.
       tabWidth: 4,                // Specify the number of spaces per indentation-level.
       useTabs: true,              // Indent lines with tabs instead of spaces.
@@ -70,6 +70,6 @@ module.exports = {
       jsxBracketSameLine: true,
       semi: true,                 // Print semicolons at the ends of statements.
       encoding: 'utf-8'           // Which encoding scheme to use on files
-    })
+    }),
   ]
 };
