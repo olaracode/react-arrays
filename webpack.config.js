@@ -3,6 +3,14 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var PrettierPlugin = require("prettier-webpack-plugin");
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
+
+const port = 3000;
+let publicUrl = `http://localhost:${port}`;
+if(process.env.GITPOD_WORKSPACE_URL){
+  const [schema, host] = process.env.GITPOD_WORKSPACE_URL.split('://');
+  publicUrl = `${port}-${host}`;
+}
+
 module.exports = {
   entry: [
     './src/js/index.js'
@@ -45,7 +53,8 @@ module.exports = {
     contentBase:  './dist',
     hot: true,
     disableHostCheck: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    public: publicUrl
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
