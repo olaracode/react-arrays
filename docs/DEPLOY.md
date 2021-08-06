@@ -14,5 +14,5 @@ $ npm run deploy:github
 
 This hosting is ideal for production ready website and requires only two steps.
 
-- Create an accound on vercel.com and come back to this tutorial.
+- Create an account on vercel.com and come back to this tutorial.
 - After creating the account type on the command line: `$ vercel` and follow the steps.
