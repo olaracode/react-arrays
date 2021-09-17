@@ -61,9 +61,7 @@
 		]
 	},
 	"dependencies": {
-		"bootstrap": "^4.6.0",
-		"jquery": "^3.5.1",
-		"popper.js": "^1.16.1",
+		"bootstrap": "^5.1.1",
 		"prop-types": "^15.6.1",
 		"query-string": "^5.1.1",
 		"react": "^16.14.0",

@@ -1,6 +1,7 @@
 ports:
   - port: 8080
     onOpen: open-browser
+    visibility: public
 tasks:
     - command: >
         npm i vercel -g
