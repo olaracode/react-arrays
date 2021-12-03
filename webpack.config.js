@@ -28,12 +28,10 @@ module.exports = {
           use: ['babel-loader', 'eslint-loader']
         },
         {
-          test: /\.(css|scss)$/, use: [{
+          test: /\.(css)$/, use: [{
               loader: "style-loader" // creates style nodes from JS strings
           }, {
               loader: "css-loader" // translates CSS into CommonJS
-          }, {
-              loader: "sass-loader" // compiles Sass to CSS
           }]
         }, //css only files
         { 
