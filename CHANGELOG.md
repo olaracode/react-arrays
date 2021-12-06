@@ -6,7 +6,7 @@ December 6, 2021
 - Disabled esLint.
 - The hot reload is not broken, we need to review how to implemented with the new webpack dev server because the `public` property is not allowed anymore as a paratmeter for the deServer, we tried the following iwthout any luck:
 
-```json
+```js
   devServer: {
     port,
     hot: true,
