@@ -3,6 +3,5 @@ ports:
     onOpen: open-browser
     visibility: public
 tasks:
-    - command: >
-        nvm install 14 &&
-        npm i vercel -g
+    - before: nvm install 14
+    - command: nvm use 14

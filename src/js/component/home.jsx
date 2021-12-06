@@ -12,7 +12,7 @@ const Home = () => {
 				<img src={rigoImage} />
 			</p>
 			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
+				If you see this green button... bootstrap is working...
 			</a>
 			<p>
 				Made by{" "}

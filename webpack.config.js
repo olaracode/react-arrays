@@ -2,14 +2,16 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var PrettierPlugin = require("prettier-webpack-plugin");
+const ESLintPlugin = require('eslint-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 
 const port = 3000;
-let publicUrl = `http://localhost:${port}`;
+let publicUrl = `ws://localhost:${port}/ws`;
 if(process.env.GITPOD_WORKSPACE_URL){
   const [schema, host] = process.env.GITPOD_WORKSPACE_URL.split('://');
-  publicUrl = `${port}-${host}`;
+  publicUrl = `wss://${port}-${host}/ws`;
 }
+console.log("publicUrl", publicUrl)
 
 module.exports = {
   entry: [
@@ -25,7 +27,7 @@ module.exports = {
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
-          use: ['babel-loader', 'eslint-loader']
+          use: ['babel-loader']
         },
         {
           test: /\.(css)$/, use: [{
@@ -48,22 +50,22 @@ module.exports = {
   },
   devtool: "source-map",
   devServer: {
-    contentBase:  './dist',
+    port,
     hot: true,
-    disableHostCheck: true,
+    allowedHosts: "all",
     historyApiFallback: true,
-    public: publicUrl
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    client: {
+      webSocketURL: publicUrl
+    },
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      Popper: 'popper.js',
-      jQuery: 'jquery',
-      // In case you imported plugins individually, you must also require them here:
-      Util: "exports-loader?Util!bootstrap/js/dist/util",
-      Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
-    }),
+    // new ESLintPlugin({
+    //   files: path.resolve(__dirname, "src"),
+    // }),
     new HtmlWebpackPlugin({
         favicon: '4geeks.ico',
         template: 'template.html'
