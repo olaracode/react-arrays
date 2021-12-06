@@ -3,5 +3,4 @@ ports:
     onOpen: open-browser
     visibility: public
 tasks:
-    - before: nvm install 14
-    - command: nvm use 14
+    - before: nvm install 16
