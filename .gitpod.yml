@@ -4,6 +4,9 @@ ports:
     visibility: public
 tasks:
   - before: nvm install 16
+  - init: npm install
+  - command: npm run start
+
 
 vscode:
   extensions:
