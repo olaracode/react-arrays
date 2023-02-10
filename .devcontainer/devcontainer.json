@@ -12,7 +12,7 @@
 	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install & node .devcontainer/welcome.js"
+	"postCreateCommand": "npm install && node .devcontainer/welcome.js"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
