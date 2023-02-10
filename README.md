@@ -34,3 +34,7 @@ It takes just 2 minutes to deploy, [click here to start the process](https://git
 - Hot Deploy: Use of [Webpack Development Server](https://webpack.js.org/configuration/dev-server/) for hot deploy and live reload.
 - One-command publish of the code to github pages with `npm run deploy:github`.
 - Babel 7 (really fast).
+
+## Contributors
+
+This template is part of the [full stack development course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) taught at [4Geeks Academy](https://4geeksacademy.com) by Alejandro Sanchez and [many other contributors](https://github.com/4GeeksAcademy/react-hello/graphs/contributors).
