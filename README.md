@@ -35,6 +35,8 @@ It takes just 2 minutes to deploy, [click here to start the process](https://git
 - One-command publish of the code to github pages with `npm run deploy:github`.
 - Babel 7 (really fast).
 
-## Contributors
+### Contributors
 
-This template is part of the [full stack development course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) taught at [4Geeks Academy](https://4geeksacademy.com) by Alejandro Sanchez and [many other contributors](https://github.com/4GeeksAcademy/react-hello/graphs/contributors).
+This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/react-hello/graphs/contributors).
+
+You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
