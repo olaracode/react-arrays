@@ -6,11 +6,15 @@ const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 
 const port = 3000;
 let publicUrl = `ws://localhost:${port}/ws`;
+//only for gitpod
 if(process.env.GITPOD_WORKSPACE_URL){
   const [schema, host] = process.env.GITPOD_WORKSPACE_URL.split('://');
   publicUrl = `wss://${port}-${host}/ws`;
 }
-console.log("publicUrl", publicUrl)
+//only for codespaces
+if(process.env.CODESPACE_NAME){
+  publicUrl = `wss://${process.env.CODESPACE_NAME}-${port}.preview.app.github.dev/ws`;
+}
 
 module.exports = {
   entry: [
